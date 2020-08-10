@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200810 15:44:08.914" generator="Robot 3.2.1 (Python 2.7.16 on darwin)">
+<suite source="/Users/apple/RobotWork/RobotProjectInitial" id="s1" name="RobotProjectInitial">
+<suite source="/Users/apple/RobotWork/RobotProjectInitial/test" id="s1-s1" name="Test">
+<suite source="/Users/apple/RobotWork/RobotProjectInitial/test/FlipkartLogin.robot" id="s1-s1-s1" name="FlipkartLogin">
+<test id="s1-s1-s1-t1" name="FirstScript">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>My first Script</arg>
+</arguments>
+<msg timestamp="20200810 15:44:09.122" level="INFO">My first Script</msg>
+<status status="PASS" endtime="20200810 15:44:09.122" starttime="20200810 15:44:09.121"></status>
+</kw>
+<status status="PASS" endtime="20200810 15:44:09.122" critical="yes" starttime="20200810 15:44:09.120"></status>
+</test>
+<test id="s1-s1-s1-t2" name="Login and add product to cart">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+<arg>executable_path=/Users/apple/Downloads/chromedriver</arg>
+</arguments>
+<msg timestamp="20200810 15:44:09.124" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" endtime="20200810 15:44:11.180" starttime="20200810 15:44:09.123"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.flipkart.com</arg>
+</arguments>
+<msg timestamp="20200810 15:44:11.183" level="INFO">Opening url 'https://www.flipkart.com'</msg>
+<status status="PASS" endtime="20200810 15:44:16.415" starttime="20200810 15:44:11.181"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20200810 15:44:16.419" starttime="20200810 15:44:16.416"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@class='_2AkmmA _29YdH8']</arg>
+</arguments>
+<msg timestamp="20200810 15:44:16.421" level="INFO">Clicking button '//button[@class='_2AkmmA _29YdH8']'.</msg>
+<status status="PASS" endtime="20200810 15:44:16.523" starttime="20200810 15:44:16.420"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20200810 15:44:16.526" starttime="20200810 15:44:16.523"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>//span[contains(text(),'Electronics')]</arg>
+</arguments>
+<msg timestamp="20200810 15:44:16.527" level="INFO">Simulating Mouse Over on element '//span[contains(text(),'Electronics')]'.</msg>
+<status status="PASS" endtime="20200810 15:44:16.812" starttime="20200810 15:44:16.526"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//a[contains(text(),'Realme')])[1]</arg>
+</arguments>
+<msg timestamp="20200810 15:44:16.813" level="INFO">Clicking element '(//a[contains(text(),'Realme')])[1]'.</msg>
+<status status="PASS" endtime="20200810 15:44:16.910" starttime="20200810 15:44:16.812"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Realme</arg>
+</arguments>
+<status status="PASS" endtime="20200810 15:44:16.928" starttime="20200810 15:44:16.911"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath://div[contains(text(),'Realme 6 Pro (Lightning Orange, 64 GB)')]</arg>
+</arguments>
+<status status="PASS" endtime="20200810 15:44:19.113" starttime="20200810 15:44:16.929"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[contains(text(),'Realme 6 Pro (Lightning Orange, 64 GB)')]</arg>
+</arguments>
+<msg timestamp="20200810 15:44:19.115" level="INFO">Clicking element '//div[contains(text(),'Realme 6 Pro (Lightning Orange, 64 GB)')]'.</msg>
+<status status="PASS" endtime="20200810 15:44:19.263" starttime="20200810 15:44:19.113"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@class='_2AkmmA _2Npkh4 _2MWPVK']</arg>
+</arguments>
+<msg timestamp="20200810 15:44:19.264" level="INFO">Clicking button '//button[@class='_2AkmmA _2Npkh4 _2MWPVK']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200810 15:44:29.863" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200810 15:44:29.864" starttime="20200810 15:44:29.337"></status>
+</kw>
+<msg timestamp="20200810 15:44:29.870" level="FAIL">Button with locator '//button[@class='_2AkmmA _2Npkh4 _2MWPVK']' not found.</msg>
+<status status="FAIL" endtime="20200810 15:44:29.871" starttime="20200810 15:44:19.263"></status>
+</kw>
+<status status="FAIL" endtime="20200810 15:44:29.871" critical="yes" starttime="20200810 15:44:09.123">Button with locator '//button[@class='_2AkmmA _2Npkh4 _2MWPVK']' not found.</status>
+</test>
+<status status="FAIL" endtime="20200810 15:44:29.873" starttime="20200810 15:44:08.961"></status>
+</suite>
+<status status="FAIL" endtime="20200810 15:44:29.875" starttime="20200810 15:44:08.959"></status>
+</suite>
+<status status="FAIL" endtime="20200810 15:44:29.877" starttime="20200810 15:44:08.939"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="RobotProjectInitial" pass="1">RobotProjectInitial</stat>
+<stat fail="1" id="s1-s1" name="Test" pass="1">RobotProjectInitial.Test</stat>
+<stat fail="1" id="s1-s1-s1" name="FlipkartLogin" pass="1">RobotProjectInitial.Test.FlipkartLogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
