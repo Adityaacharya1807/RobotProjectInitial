@@ -17,4 +17,4 @@ Login and add product to cart
   Scroll Element Into View    xpath://div[contains(text(),'Realme 6 Pro (Lightning Orange, 64 GB)')]
   Click Element    //div[contains(text(),'Realme 6 Pro (Lightning Orange, 64 GB)')]  
   Click Button    //button[@class='_2AkmmA _2Npkh4 _2MWPVK']  
-  Close All Browsers    
+  Close Browser 
