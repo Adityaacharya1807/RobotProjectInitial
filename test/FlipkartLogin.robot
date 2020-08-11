@@ -1,20 +1,28 @@
 *** Settings ***
 Library    SeleniumLibrary
+Resource    ../Resources/Data.robot
 
 *** Test Cases ***
 FirstScript
-    Log   My first Script    
+    Log   My first Script 
     
-Login and add product to cart       
-    Create Webdriver    Chrome     executable_path=/Users/apple/Downloads/chromedriver
-    Go To    https://www.flipkart.com
-     Set Browser Implicit Wait    5
-    Click Button    //button[@class='_2AkmmA _29YdH8']    
+Start Browser
+    Start Browser and Maximize
+    
+Add product to cart       
     Set Browser Implicit Wait    5
-   Mouse Over    //span[contains(text(),'Electronics')]    
-  Click Element  (//a[contains(text(),'Realme')])[1]  
-  Wait Until Page Contains    Realme    
-  Scroll Element Into View    xpath://div[contains(text(),'Realme 6 Pro (Lightning Orange, 64 GB)')]
-  Click Element    //div[contains(text(),'Realme 6 Pro (Lightning Orange, 64 GB)')]  
-  Click Button    //button[@class='_2AkmmA _2Npkh4 _2MWPVK']  
-  Close Browser 
+    Close Popup  
+    Set Browser Implicit Wait    5
+    Select Category    Electronics  
+    Select Mobile Brand  Mi
+    Wait Until Page Contains     Mi    
+    Select Mobile   5
+    @{list1}    Get Window Handles
+    FOR    ${win}    IN   ${list1}
+       Switch Window   ${win}[1]  
+       ${url}=  Get Location
+       Log To Console   ${url}  
+       Click Element  (//ul[@class='row'])//li[1]   
+       Page Should Contain     Redmi        
+    END  
+    Close Browser 
