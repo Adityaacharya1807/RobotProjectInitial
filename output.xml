@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200811 13:56:34.212" generator="Robot 3.2.1 (Python 2.7.16 on darwin)">
+<robot rpa="false" generated="20200811 16:27:05.653" generator="Robot 3.2.1 (Python 2.7.16 on darwin)">
 <suite source="/Users/apple/RobotWork/RobotProjectInitial" id="s1" name="RobotProjectInitial">
 <suite source="/Users/apple/RobotWork/RobotProjectInitial/test" id="s1-s1" name="Test">
 <suite source="/Users/apple/RobotWork/RobotProjectInitial/test/FlipkartLogin.robot" id="s1-s1-s1" name="FlipkartLogin">
@@ -11,24 +11,24 @@
 <arg>${Browser}</arg>
 <arg>executable_path=${PATH}</arg>
 </arguments>
-<msg timestamp="20200811 13:56:34.540" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" endtime="20200811 13:56:36.604" starttime="20200811 13:56:34.540"></status>
+<msg timestamp="20200811 16:27:05.969" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" endtime="20200811 16:27:08.227" starttime="20200811 16:27:05.968"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20200811 13:56:36.606" level="INFO">Opening url 'https://www.flipkart.com'</msg>
-<status status="PASS" endtime="20200811 13:56:39.792" starttime="20200811 13:56:36.605"></status>
+<msg timestamp="20200811 16:27:08.230" level="INFO">Opening url 'https://www.flipkart.com'</msg>
+<status status="PASS" endtime="20200811 16:27:11.208" starttime="20200811 16:27:08.228"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20200811 13:56:40.046" starttime="20200811 13:56:39.792"></status>
+<status status="PASS" endtime="20200811 16:27:11.510" starttime="20200811 16:27:11.208"></status>
 </kw>
-<status status="PASS" endtime="20200811 13:56:40.046" starttime="20200811 13:56:34.539"></status>
+<status status="PASS" endtime="20200811 16:27:11.511" starttime="20200811 16:27:05.967"></status>
 </kw>
-<status status="PASS" endtime="20200811 13:56:40.047" critical="yes" starttime="20200811 13:56:34.538"></status>
+<status status="PASS" endtime="20200811 16:27:11.511" critical="yes" starttime="20200811 16:27:05.967"></status>
 </test>
 <test id="s1-s1-s1-t2" name="Add product to cart">
 <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
@@ -36,7 +36,7 @@
 <arguments>
 <arg>5</arg>
 </arguments>
-<status status="PASS" endtime="20200811 13:56:40.062" starttime="20200811 13:56:40.051"></status>
+<status status="PASS" endtime="20200811 16:27:11.516" starttime="20200811 16:27:11.514"></status>
 </kw>
 <kw name="Close Popup" library="Data">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -44,17 +44,17 @@
 <arguments>
 <arg>//button[@class='_2AkmmA _29YdH8']</arg>
 </arguments>
-<msg timestamp="20200811 13:56:40.064" level="INFO">Clicking button '//button[@class='_2AkmmA _29YdH8']'.</msg>
-<status status="PASS" endtime="20200811 13:56:40.170" starttime="20200811 13:56:40.064"></status>
+<msg timestamp="20200811 16:27:11.518" level="INFO">Clicking button '//button[@class='_2AkmmA _29YdH8']'.</msg>
+<status status="PASS" endtime="20200811 16:27:11.658" starttime="20200811 16:27:11.517"></status>
 </kw>
-<status status="PASS" endtime="20200811 13:56:40.171" starttime="20200811 13:56:40.063"></status>
+<status status="PASS" endtime="20200811 16:27:11.659" starttime="20200811 16:27:11.516"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<status status="PASS" endtime="20200811 13:56:40.173" starttime="20200811 13:56:40.172"></status>
+<status status="PASS" endtime="20200811 16:27:11.662" starttime="20200811 16:27:11.659"></status>
 </kw>
 <kw name="Select Category" library="Data">
 <arguments>
@@ -65,139 +65,172 @@
 <arguments>
 <arg>//span[contains(text(),'${CATEGORY}')]</arg>
 </arguments>
-<msg timestamp="20200811 13:56:40.175" level="INFO">Simulating Mouse Over on element '//span[contains(text(),'Electronics')]'.</msg>
-<status status="PASS" endtime="20200811 13:56:40.481" starttime="20200811 13:56:40.175"></status>
+<msg timestamp="20200811 16:27:11.665" level="INFO">Simulating Mouse Over on element '//span[contains(text(),'Electronics')]'.</msg>
+<status status="PASS" endtime="20200811 16:27:11.967" starttime="20200811 16:27:11.664"></status>
 </kw>
-<status status="PASS" endtime="20200811 13:56:40.482" starttime="20200811 13:56:40.174"></status>
+<status status="PASS" endtime="20200811 16:27:11.968" starttime="20200811 16:27:11.662"></status>
 </kw>
 <kw name="Select Mobile Brand" library="Data">
 <arguments>
-<arg>Mi</arg>
+<arg>Motorola razr</arg>
 </arguments>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>(//a[contains(text(),'${MOBILE_BRAND}')])[1]</arg>
 </arguments>
-<msg timestamp="20200811 13:56:40.483" level="INFO">Clicking element '(//a[contains(text(),'Mi')])[1]'.</msg>
-<status status="PASS" endtime="20200811 13:56:40.561" starttime="20200811 13:56:40.483"></status>
+<msg timestamp="20200811 16:27:11.970" level="INFO">Clicking element '(//a[contains(text(),'Motorola razr')])[1]'.</msg>
+<status status="PASS" endtime="20200811 16:27:12.161" starttime="20200811 16:27:11.970"></status>
 </kw>
-<status status="PASS" endtime="20200811 13:56:40.562" starttime="20200811 13:56:40.482"></status>
+<status status="PASS" endtime="20200811 16:27:12.162" starttime="20200811 16:27:11.969"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on the current page.</doc>
 <arguments>
-<arg>Mi</arg>
+<arg>Motorola razr</arg>
 </arguments>
-<status status="PASS" endtime="20200811 13:56:40.579" starttime="20200811 13:56:40.562"></status>
+<status status="PASS" endtime="20200811 16:27:12.198" starttime="20200811 16:27:12.162"></status>
 </kw>
 <kw name="Select Mobile" library="Data">
 <arguments>
-<arg>5</arg>
+<arg>2</arg>
 </arguments>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>(//div[@class='_3wU53n'])[ ${Mobile_Name} ]</arg>
 </arguments>
-<status status="PASS" endtime="20200811 13:56:41.857" starttime="20200811 13:56:40.580"></status>
+<status status="PASS" endtime="20200811 16:27:14.382" starttime="20200811 16:27:12.200"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>(//div[@class='_3wU53n'])[ ${Mobile_Name} ]</arg>
 </arguments>
-<msg timestamp="20200811 13:56:41.858" level="INFO">Clicking element '(//div[@class='_3wU53n'])[ 5 ]'.</msg>
-<status status="PASS" endtime="20200811 13:56:41.981" starttime="20200811 13:56:41.857"></status>
+<msg timestamp="20200811 16:27:14.383" level="INFO">Clicking element '(//div[@class='_3wU53n'])[ 2 ]'.</msg>
+<status status="PASS" endtime="20200811 16:27:14.488" starttime="20200811 16:27:14.382"></status>
 </kw>
-<status status="PASS" endtime="20200811 13:56:41.981" starttime="20200811 13:56:40.580"></status>
+<status status="PASS" endtime="20200811 16:27:14.489" starttime="20200811 16:27:12.199"></status>
 </kw>
 <kw name="Get Window Handles" library="SeleniumLibrary">
 <doc>Returns all child window handles of the selected browser as a list.</doc>
 <assign>
 <var>@{list1}</var>
 </assign>
-<msg timestamp="20200811 13:56:41.986" level="INFO">@{list1} = [ CDwindow-686AC0DD3E421EC046557AEB8BAABA8E | CDwindow-E9918A374E6AC8116317334D14526088 ]</msg>
-<status status="PASS" endtime="20200811 13:56:41.986" starttime="20200811 13:56:41.982"></status>
+<msg timestamp="20200811 16:27:14.506" level="INFO">@{list1} = [ CDwindow-912D93CA5833ABC1B9B4B54C43B52030 | CDwindow-CC16A8999D21A2B7C7AE3906FA457D97 ]</msg>
+<status status="PASS" endtime="20200811 16:27:14.507" starttime="20200811 16:27:14.490"></status>
 </kw>
 <kw type="for" name="${win} IN [ ${list1} ]">
-<kw type="foritem" name="${win} = [u'CDwindow-686AC0DD3E421EC046557AEB8BAABA8E', u'CDwindow-E9918A374E6AC8116317334D14526088']">
+<kw type="foritem" name="${win} = [u'CDwindow-912D93CA5833ABC1B9B4B54C43B52030', u'CDwindow-CC16A8999D21A2B7C7AE3906FA457D97']">
 <kw name="Switch Window" library="SeleniumLibrary">
 <doc>Switches to browser window matching ``locator``.</doc>
 <arguments>
 <arg>${win}[1]</arg>
 </arguments>
-<status status="PASS" endtime="20200811 13:56:42.064" starttime="20200811 13:56:41.988"></status>
+<status status="PASS" endtime="20200811 16:27:14.576" starttime="20200811 16:27:14.508"></status>
 </kw>
 <kw name="Get Location" library="SeleniumLibrary">
 <doc>Returns the current browser window URL.</doc>
 <assign>
 <var>${url}</var>
 </assign>
-<msg timestamp="20200811 13:56:44.276" level="INFO">${url} = https://www.flipkart.com/redmi-k20-pro-glacier-blue-128-gb/p/itmfgfjthe3dyjp3?pid=MOBFG7UYZ7DCKWSR&amp;lid=LSTMOBFG7UYZ7DCKWSRHOQYRI&amp;marketplace=FLIPKART&amp;srno=b_1_5&amp;otracker=nmenu_sub_Electronics_0_Mi&amp;fm=...</msg>
-<status status="PASS" endtime="20200811 13:56:44.276" starttime="20200811 13:56:42.064"></status>
+<msg timestamp="20200811 16:27:16.799" level="INFO">${url} = https://www.flipkart.com/motorola-razr-gold-128-gb/p/itm160c3d63385fb?pid=MOBFRSB9ZJBRDVCD&amp;lid=LSTMOBFRSB9ZJBRDVCD13CZBB&amp;marketplace=FLIPKART&amp;srno=b_1_2&amp;otracker=nmenu_sub_Electronics_0_Motorola%20raz...</msg>
+<status status="PASS" endtime="20200811 16:27:16.799" starttime="20200811 16:27:14.577"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<status status="PASS" endtime="20200811 13:56:44.277" starttime="20200811 13:56:44.276"></status>
+<status status="PASS" endtime="20200811 16:27:16.800" starttime="20200811 16:27:16.799"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Textvalue}</arg>
+</arguments>
+<assign>
+<var>${listdata}</var>
+</assign>
+<msg timestamp="20200811 16:27:16.823" level="INFO">${listdata} = Motorola Razr (Gold, 128 GB)  (6 GB RAM)</msg>
+<status status="PASS" endtime="20200811 16:27:16.823" starttime="20200811 16:27:16.801"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${listdata}</arg>
+</arguments>
+<msg timestamp="20200811 16:27:16.825" level="INFO">${listdata} = Motorola Razr (Gold, 128 GB)  (6 GB RAM)</msg>
+<status status="PASS" endtime="20200811 16:27:16.825" starttime="20200811 16:27:16.824"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${listdata}</arg>
+</arguments>
+<status status="PASS" endtime="20200811 16:27:16.825" starttime="20200811 16:27:16.825"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>(//ul[@class='row'])//li[1]</arg>
+<arg>${AddToCart}</arg>
 </arguments>
-<msg timestamp="20200811 13:56:44.278" level="INFO">Clicking element '(//ul[@class='row'])//li[1]'.</msg>
-<status status="PASS" endtime="20200811 13:56:44.368" starttime="20200811 13:56:44.277"></status>
+<msg timestamp="20200811 16:27:16.826" level="INFO">Clicking element '(//ul[@class='row'])//li[1]'.</msg>
+<status status="PASS" endtime="20200811 16:27:16.899" starttime="20200811 16:27:16.826"></status>
 </kw>
-<status status="PASS" endtime="20200811 13:56:44.369" starttime="20200811 13:56:41.987"></status>
+<status status="PASS" endtime="20200811 16:27:16.899" starttime="20200811 16:27:14.508"></status>
 </kw>
-<status status="PASS" endtime="20200811 13:56:44.369" starttime="20200811 13:56:41.986"></status>
+<status status="PASS" endtime="20200811 16:27:16.899" starttime="20200811 16:27:14.507"></status>
 </kw>
-<status status="PASS" endtime="20200811 13:56:44.370" critical="yes" starttime="20200811 13:56:40.049"></status>
+<status status="PASS" endtime="20200811 16:27:16.900" critical="yes" starttime="20200811 16:27:11.513"></status>
 </test>
 <test id="s1-s1-s1-t3" name="Verify the cart value">
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<doc>Verifies that current page contains ``text``.</doc>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
-<arg>Redmi</arg>
+<arg>5</arg>
 </arguments>
-<msg timestamp="20200811 13:56:44.404" level="INFO">Current page contains text 'Redmi'.</msg>
-<status status="PASS" endtime="20200811 13:56:44.404" starttime="20200811 13:56:44.373"></status>
+<status status="PASS" endtime="20200811 16:27:16.924" starttime="20200811 16:27:16.903"></status>
 </kw>
-<kw name="Capture Element Screenshot" library="SeleniumLibrary">
-<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
 <arguments>
-<arg>${ElementValue}</arg>
+<arg>${CartOrderName}</arg>
 </arguments>
-<msg timestamp="20200811 13:56:45.727" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-2.png"&gt;&lt;img src="selenium-element-screenshot-2.png" width="400px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20200811 13:56:45.727" starttime="20200811 13:56:44.404"></status>
+<assign>
+<var>${name}</var>
+</assign>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200811 16:27:18.330" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200811 16:27:18.331" starttime="20200811 16:27:17.766"></status>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200811 13:56:45.843" starttime="20200811 13:56:45.728"></status>
+<msg timestamp="20200811 16:27:18.339" level="FAIL">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=84.0.4147.105)
+</msg>
+<status status="FAIL" endtime="20200811 16:27:18.340" starttime="20200811 16:27:16.925"></status>
 </kw>
-<status status="PASS" endtime="20200811 13:56:45.844" critical="yes" starttime="20200811 13:56:44.372"></status>
+<status status="FAIL" endtime="20200811 16:27:18.341" critical="yes" starttime="20200811 16:27:16.901">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=84.0.4147.105)
+</status>
 </test>
-<status status="PASS" endtime="20200811 13:56:45.846" starttime="20200811 13:56:34.272"></status>
+<status status="FAIL" endtime="20200811 16:27:18.342" starttime="20200811 16:27:05.708"></status>
 </suite>
-<status status="PASS" endtime="20200811 13:56:45.851" starttime="20200811 13:56:34.270"></status>
+<status status="FAIL" endtime="20200811 16:27:18.346" starttime="20200811 16:27:05.705"></status>
 </suite>
-<status status="PASS" endtime="20200811 13:56:45.854" starttime="20200811 13:56:34.246"></status>
+<status status="FAIL" endtime="20200811 16:27:18.349" starttime="20200811 16:27:05.684"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="3">Critical Tests</stat>
-<stat fail="0" pass="3">All Tests</stat>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="RobotProjectInitial" pass="3">RobotProjectInitial</stat>
-<stat fail="0" id="s1-s1" name="Test" pass="3">RobotProjectInitial.Test</stat>
-<stat fail="0" id="s1-s1-s1" name="FlipkartLogin" pass="3">RobotProjectInitial.Test.FlipkartLogin</stat>
+<stat fail="1" id="s1" name="RobotProjectInitial" pass="2">RobotProjectInitial</stat>
+<stat fail="1" id="s1-s1" name="Test" pass="2">RobotProjectInitial.Test</stat>
+<stat fail="1" id="s1-s1-s1" name="FlipkartLogin" pass="2">RobotProjectInitial.Test.FlipkartLogin</stat>
 </suite>
 </statistics>
 <errors>

@@ -10,7 +10,8 @@ ${CATEGORY}    Electronics
 ${ElementValue}   //span[@class='pMSy0p XU9vZa'] 
 ${placeOrder}  //button[@class='_2AkmmA iwYpF9 _7UHT_c'] 
 ${AddToCart}  (//ul[@class='row'])//li[1] 
-
+${CartOrderName}  //div[@class='_3vIvU_']//div//a
+${Textvalue}  //div[@class='_29OxBi']//h1//span
 *** Keywords ***
 Start Browser and Maximize
     Create Webdriver    ${Browser}     executable_path=${PATH} 
