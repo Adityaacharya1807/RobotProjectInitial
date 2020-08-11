@@ -2,10 +2,7 @@
 Library    SeleniumLibrary
 Resource    ../Resources/Data.robot
 
-*** Test Cases ***
-FirstScript
-    Log   My first Script 
-    
+*** Test Cases ***    
 Start Browser
     Start Browser and Maximize
     
@@ -22,7 +19,10 @@ Add product to cart
        Switch Window   ${win}[1]  
        ${url}=  Get Location
        Log To Console   ${url}  
-       Click Element  (//ul[@class='row'])//li[1]   
-       Page Should Contain     Redmi        
+       Click Element  (//ul[@class='row'])//li[1]       
     END  
+    
+Verify the cart value
+    Page Should Contain    Redmi   
+    Capture Element Screenshot    ${ElementValue}
     Close Browser 

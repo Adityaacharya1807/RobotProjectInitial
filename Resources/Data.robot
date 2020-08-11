@@ -7,6 +7,7 @@ ${URL}    https://www.flipkart.com
 ${Browser}    Chrome
 ${MOBILE_BRAND}    Realme
 ${CATEGORY}    Electronics
+${ElementValue}   //span[@class='pMSy0p XU9vZa'] 
 
 *** Keywords ***
 Start Browser and Maximize
