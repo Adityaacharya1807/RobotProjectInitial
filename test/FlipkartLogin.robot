@@ -6,7 +6,7 @@ Resource    ../Resources/Data.robot
 Start Browser
     Start Browser and Maximize
     
-Add product to cart       
+Add product to cart      
     Set Browser Implicit Wait    5
     Close Popup  
     Set Browser Implicit Wait    5
@@ -19,10 +19,11 @@ Add product to cart
        Switch Window   ${win}[1]  
        ${url}=  Get Location
        Log To Console   ${url}  
-       Click Element  (//ul[@class='row'])//li[1]       
+       Click Element  ${AddToCart}       
     END  
     
 Verify the cart value
-    Page Should Contain    Redmi   
+    Set Browser Implicit Wait    5
+    Element Should Be Enabled    ${placeOrder} 
     Capture Element Screenshot    ${ElementValue}
     Close Browser 

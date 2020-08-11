@@ -8,6 +8,8 @@ ${Browser}    Chrome
 ${MOBILE_BRAND}    Realme
 ${CATEGORY}    Electronics
 ${ElementValue}   //span[@class='pMSy0p XU9vZa'] 
+${placeOrder}  //button[@class='_2AkmmA iwYpF9 _7UHT_c'] 
+${AddToCart}  (//ul[@class='row'])//li[1] 
 
 *** Keywords ***
 Start Browser and Maximize
