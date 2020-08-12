@@ -8,10 +8,12 @@ ${Browser}    Chrome
 ${MOBILE_BRAND}    Realme
 ${CATEGORY}    Electronics
 ${ElementValue}   //span[@class='pMSy0p XU9vZa'] 
-${placeOrder}  //button[@class='_2AkmmA iwYpF9 _7UHT_c'] 
 ${AddToCart}  (//ul[@class='row'])//li[1] 
 ${CartOrderName}  //div[@class='_3vIvU_']//div//a
 ${Textvalue}  //div[@class='_29OxBi']//h1//span
+${hoverlink}  (//div[@class='_3vIvU_'])//div[1]
+${placeOrder}   //button//span[text()='Place Order']
+${cartText}  (//div[@class='_3vIvU_'])//a
 *** Keywords ***
 Start Browser and Maximize
     Create Webdriver    ${Browser}     executable_path=${PATH} 
@@ -33,3 +35,4 @@ Select Mobile
     [Arguments]   ${Mobile_Name} 
     Scroll Element Into View    (//div[@class='_3wU53n'])[ ${Mobile_Name} ]
     Click Element    (//div[@class='_3wU53n'])[ ${Mobile_Name} ]
+    

@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    String    
 Resource    ../Resources/Data.robot
 
 *** Test Cases ***    
@@ -9,11 +10,11 @@ Start Browser
 Add product to cart      
     Set Browser Implicit Wait    5
     Close Popup  
-    Set Browser Implicit Wait    5
+    #Set Browser Implicit Wait    10
     Select Category    Electronics  
     Select Mobile Brand  iPhone SE
-    Wait Until Page Contains    iPhone SE
-    Select Mobile   7
+    Wait Until Page Contains   iPhone SE   
+    Select Mobile   8
     @{list1}    Get Window Handles
     FOR    ${win}    IN   ${list1}
        Switch Window   ${win}[1]  
@@ -25,8 +26,14 @@ Add product to cart
        Click Element  ${AddToCart}  
     END  
 Verify the cart value
-    Set Browser Implicit Wait    5
+    Sleep    5    
+    Mouse Over    ${hoverlink} 
+    ${text}=  Get Text    ${cartText}
+    ${word}=   Split String From Right    ${text}  max_split=-1
     Set Global Variable     ${listdata} 
-    Page Should Contain     ${listdata}
+    ${words}=   Split String From Right    ${listdata}  max_split=-1
+    ${output}=  Should Be Equal As Strings    ${word}[0]      ${words}[0]  
+    Mouse Over  ${placeOrder}
+    Element Should Be Enabled    ${placeOrder}        
     Capture Element Screenshot    ${ElementValue}
     Close Browser 
