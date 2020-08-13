@@ -10,7 +10,6 @@ Start Browser
 Add product to cart      
     Set Browser Implicit Wait    5
     Close Popup  
-    #Set Browser Implicit Wait    10
     Select Category    Electronics  
     Select Mobile Brand  iPhone SE
     Wait Until Page Contains   iPhone SE  
@@ -26,7 +25,7 @@ Add product to cart
        Click Element  ${AddToCart}  
     END  
 Verify the cart value
-    Sleep    5    
+    Sleep  5   
     Mouse Over    ${hoverlink} 
     ${text}=  Get Text    ${cartText}
     ${word}=   Split String From Right    ${text}  max_split=-1
