@@ -14,6 +14,7 @@ ${Textvalue}  //div[@class='_29OxBi']//h1//span
 ${hoverlink}  (//div[@class='_3vIvU_'])//div[1]
 ${placeOrder}   //button//span[text()='Place Order']
 ${cartText}  (//div[@class='_3vIvU_'])//a
+
 *** Keywords ***
 Start Browser and Maximize
     Create Webdriver    ${Browser}     executable_path=${PATH} 
