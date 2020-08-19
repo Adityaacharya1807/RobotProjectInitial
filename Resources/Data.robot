@@ -17,7 +17,7 @@ ${cartText}  (//div[@class='_3vIvU_'])//a
 
 *** Keywords ***
 Start Browser and Maximize
-    Create Webdriver    ${Browser}     executable_path=${PATH} 
+    Create Webdriver    ${Browser}     #executable_path=${PATH} 
     Go To     ${URL}   
     Maximize Browser Window  
 

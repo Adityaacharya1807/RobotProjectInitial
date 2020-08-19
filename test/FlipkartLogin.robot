@@ -1,19 +1,19 @@
-*** Settings ***
-Library    SeleniumLibrary
+*** Settings *** 
 Library    String    
+Library    Zoomba.MobileLibrary
 Resource    ../Resources/Data.robot
 
 *** Test Cases ***    
 Start Browser
     Start Browser and Maximize
-     
+    
 Add product to cart      
     Set Browser Implicit Wait    5
     Close Popup  
     Select Category    Electronics  
     Select Mobile Brand  iPhone SE
     Wait Until Page Contains   iPhone SE  
-    Select Mobile   8
+    Select Mobile   5
     @{list1}    Get Window Handles
     FOR    ${win}    IN   ${list1}
        Switch Window   ${win}[1]  
@@ -22,7 +22,7 @@ Add product to cart
        ${listdata}=  Get Text    ${Textvalue}
        Set Global Variable    ${listdata}   
        Log To Console   ${listdata}  
-       Click Element  ${AddToCart}  
+       Click Element  ${AddToCart} 
     END  
 Verify the cart value
     Sleep  5   
