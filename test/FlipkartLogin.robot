@@ -1,5 +1,5 @@
 *** Settings *** 
-Library    String    
+Library     SeleniumLibrary     
 Library    Zoomba.MobileLibrary
 Resource    ../Resources/Data.robot
 
