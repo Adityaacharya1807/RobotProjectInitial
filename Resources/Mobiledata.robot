@@ -11,6 +11,10 @@ ${line_e2e}  Appium
 ${flipkart_package}  com.flipkart.android
 ${flipkart_activity}  com.flipkart.android.SplashActivity
 ${chrome_app}  /Users/apple/Desktop/com.flipkart.android (1).apk
+${popup}    xpath=//*[@resource-id='com.google.android.gms:id/cancel']
+${skipdata}  xpath=//*[@resource-id='com.flipkart.android:id/btn_skip']
+${allow}  xpath=//*[@resource-id='com.flipkart.android:id/allow_button']
+${permission}  xpath=//*[@resource-id='com.android.packageinstaller:id/permission_allow_button']
 ${elec}  xpath=(//*[@resource-id='com.flipkart.android:id/banner_image'])[3]
 ${mob1}  xpath=(//*[@resource-id='com.flipkart.android:id/tv_card_view_holder'])[1]
 ${mob2}  xpath=//*[@resource-id='com.flipkart.android:id/banner_image']
@@ -23,6 +27,7 @@ ${prod2}  xpath=(//*[@class='android.view.ViewGroup'])[6]
 ${prod3}  xpath= (//*[@class='android.view.ViewGroup'])[6]
 ${addTo}  //*[@text='ADD TO CART'] 
 ${goto}   //*[@text='GO TO CART'] 
+${validate}  xpath=//*[@class='android.widget.TextView'][6]
 ${skip}   //*[@text='SKIP & GO TO CART']
 
 
