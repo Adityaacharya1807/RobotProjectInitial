@@ -5,13 +5,20 @@ Resource   ../Resources/Mobiledata.robot
 
 *** Test Case ***
 Open Application On Android
-   Open Application    ${server}  appPackage=${flipkart_package}  appActivity=${flipkart_activity}  platformName=${platform}  platformVersion=${platform_version}    deviceName=${device}    automationName=${line_e2e}   app=${chrome_app}   noReset=true  
+   Open Application    ${server}  appPackage=${flipkart_package}  appActivity=${flipkart_activity}  platformName=${platform}  platformVersion=${platform_version}    deviceName=${device}    automationName=${line_e2e}   app=${chrome_app}   #noReset=true  
+   Sleep  5
+   Click Element   ${popup}
+   Click Element   ${skipdata}
    Sleep  5
    Click Element  ${elec} 
    Sleep   2 
    Click Element  ${Search}
    Input Text    ${text}  mi
    Click Element   ${Ent}
+   Sleep  5
+   Click Element  ${allow}
+   Sleep  5
+   Click Element  ${permission}
    Sleep  2
    Scroll  ${prod1}  ${prod2}
    Wait Until Page Contains Element  ${prod2}
@@ -22,8 +29,12 @@ Open Application On Android
 
 Skip and Continue
   Sleep  5
-  Click Element   ${skip}
-  Wait Until Page Contains Element ${skip}
+  Click Element    ${skip} 
+  Wait Until Page Contains Element   ${skip} 
+
+Validate the Cart
+ Click Element  ${validate}
+ Wait Until Page Contains Element   ${validate}
 
 
 
